@@ -17,3 +17,17 @@ describe('Caesar Cipher', function() {
         expect(caesarCipher('abc', 2)).toBe('cde');
     });
 });
+
+describe('Truthy-Falsy', function () {
+    var a;
+    beforeEach(function () {
+      a = 12;
+    });
+
+    it('Should return true for an integer and false for a string test', function () {
+      expect(a).toBe(12);
+      expect(a).not.toBe('12');
+      expect(a).toEqual(12);
+      expect(a).toEqual('12');
+    });
+});
