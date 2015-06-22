@@ -18,16 +18,19 @@ describe('Caesar Cipher', function() {
     });
 });
 
-describe('Truthy-Falsy', function () {
+describe('Truthy-Falsy', function() {
     var a;
-    beforeEach(function () {
+    beforeEach(function() {
       a = 12;
     });
 
-    it('Should return true for an integer and false for a string test', function () {
+    afterEach(function() {
+      var a;
+    });
+
+    it('Should return true for an integer and false for a string test', function() {
       expect(a).toBe(12);
       expect(a).not.toBe('12');
       expect(a).toEqual(12);
-      expect(a).toEqual('12');
     });
 });
